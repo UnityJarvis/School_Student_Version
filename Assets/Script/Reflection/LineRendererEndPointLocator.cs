@@ -9,6 +9,7 @@ public class LineRendererEndPointLocator : MonoBehaviour
     }
 
     public float zPos = 2;
+    
     void Update()
     {        
         RayHitter();
@@ -20,8 +21,8 @@ public class LineRendererEndPointLocator : MonoBehaviour
         RaycastHit hitInfo;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitInfo))
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hitInfo.distance, Color.yellow);
-            Debug.Log(hitInfo.collider.name);
+            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hitInfo.distance , Color.red);
+            //Debug.Log(hitInfo.collider.name);
             zPos = hitInfo.distance;
             return hitInfo;
         }
