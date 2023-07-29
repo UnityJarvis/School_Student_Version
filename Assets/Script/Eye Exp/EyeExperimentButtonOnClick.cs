@@ -3,15 +3,15 @@ using UnityEngine;
 public class EyeExperimentButtonOnClick : MonoBehaviour
 {
     public Animator anim;
-    public GameObject lightt;
+    public Light lightt;
     public void PlayLightAnimation()
     {
-        lightt.SetActive(false);
+        lightt.enabled = false;
         anim.Play("New State");
         anim.Play("Line");
     }
     public void StopLightOn()
     {
-        lightt.SetActive(true);
+        lightt.enabled=true;
     }
 }
