@@ -22,13 +22,13 @@ public class LightRoomButtonOnClick : MonoBehaviour
         {
             spotLight1.SetActive(true);
             spotLight2.SetActive(false);
-            mirrorWall.eulerAngles = new Vector3(0,0,90);
+            mirrorWall.localEulerAngles = new Vector3(0,0,90);
         }
         if (lightStatus == false)
         {
             spotLight1.SetActive(false);
             spotLight2.SetActive(true);
-            mirrorWall.eulerAngles = new Vector3(0,180,90);
+            mirrorWall.localEulerAngles = new Vector3(0,180,90);
         }
     }
 }

@@ -3,9 +3,10 @@ using UnityEngine;
 public class PaintButtonOnClick : MonoBehaviour
 {
     public GameObject sideLight, FrontLight;
-    bool lightState;
     public Animator animator;
-    
+
+
+    bool lightState;
     public void PaintBtnOnClick()
     {
         lightState = !lightState;
